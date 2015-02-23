@@ -5,7 +5,7 @@ var path       = require('path'),
 
 module.exports = function(app) {
     app.get('/', function(req, res) {
-        res.sendFile(clientPath + 'index.html');
+        res.sendFile(clientPath + 'app/index.html');
     });
 
     app.get('/test', function(req, res) {
@@ -21,6 +21,6 @@ module.exports = function(app) {
     // 500
     app.use(function(err, req, res, next) {
         res.status(err.status || 500);
-        res.send('500!!' + { error: err});
+        res.send('500 ' + { error: err});
     });
 };
