@@ -12,10 +12,14 @@
         <h1>Home page</h1>
         <div ng-controller="MudController">
             {{test}}
+            <hr>
+            
         </div>
 
+        <script scr="localhost:5000/socket.io/socket.io.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="app/components/kick/kick.js"></script>
         <script src="app/mud.js"></script>
     </body>
 </html>
